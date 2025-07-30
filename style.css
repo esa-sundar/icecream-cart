@@ -1,0 +1,128 @@
+html, body {
+      height: 100%;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #fefcea, #f1da36);
+      margin: 0;
+      padding: 0;
+    }
+    h1.page-title {
+      text-align: center;
+      padding: 20px;
+      color: #4e2c0a;
+      background-color: rgba(255, 255, 255, 0.8);
+      margin: 0;
+      font-size: 36px;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: calc(100vh - 80px);
+    }
+    .product, .product-detail, .billing-form, .confirmation-box {
+      max-width: 400px;
+      width: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      margin: auto;
+    }
+    .product {
+      flex: 1 1 50%;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .product:hover {
+      transform: scale(1.05);
+    }
+    select, input[type='text'], input[type='tel'], input[type='number'] {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .flavors {
+  display: flex;          /* align items horizontally */
+  gap: 10px;              /* space between buttons */
+  justify-content: center; /* center horizontally */
+  flex-wrap: nowrap;      /* prevent wrapping to next line */
+  overflow-x: auto;       /* add horizontal scroll if overflow */
+  padding: 10px 0;
+}
+
+  .flavors button {
+  background-color: #666; /* default fallback */
+  border: none;
+  border-radius: 20px; /* pill shape */
+  padding: 8px 16px;
+  min-width: 70px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flavors button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+
+
+    input.ng-invalid.ng-dirty {
+  border-color: red;
+}
+    button {
+  background-color: #ffd966;
+  color: #4e2c0a;
+  padding: 8px 16px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #f1c232;
+}
+
+    .cart-popup {
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 300px;
+      background: #fff;
+      border-left: 2px solid #ccc;
+      height: 100%;
+      box-shadow: -4px 0 8px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    .confirmation-box {
+      text-align: left;
+      line-height: 1.6;
+    }
+    .product img {
+      max-width: 100%;
+      height: auto;
+    }
